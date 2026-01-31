@@ -1,7 +1,7 @@
-import 'package:firebase/firebase.dart' as Firebase;
 import 'package:flutter/material.dart';
-import 'package:mentoring_meet_1/bottom_nav_bar.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:mentoring_meet_1/view/login.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: LoginScreen(),

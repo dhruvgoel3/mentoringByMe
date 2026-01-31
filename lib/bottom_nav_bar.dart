@@ -12,7 +12,7 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
   int tabIndex = 0;
-  List<Widget> tabItems = [Homepage(), Firstpage(), Secondpage()];
+  List<Widget> tabItems = [HomeScreen(), Firstpage(), Secondpage()];
 
   @override
   Widget build(BuildContext context) {
